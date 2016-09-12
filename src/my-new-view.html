@@ -1,0 +1,26 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="./icon-toggle-demo.html">
+
+<dom-module id="my-new-view">
+  <!-- Defines the element's style and local DOM -->
+  <template>
+    <style>
+      :host {
+        display: block;
+--iron-icon-height: 32px;
+    --iron-icon-width: 32px;
+        padding: 16px;
+      }
+    </style>
+
+    <h1>New view</h1>
+    <paper-slider min="-100" max="100" value="50"></paper-slider>
+    <icon-toggle-demo></icon-toggle-demo>
+  </template>
+  <!-- Creates the element's prototype and registers it -->
+  <script>
+    Polymer({
+      is: 'my-new-view'
+    });
+  </script>
+</dom-module>
